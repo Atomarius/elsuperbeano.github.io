@@ -1,6 +1,6 @@
 ## ElSuperbeano
 
-My name is Marius and I'm a Software Engineer and working for [Goodgame Studios](www.goodgamestudios.com).
+My name is Marius and I'm a Software Engineer working for [Goodgame Studios](www.goodgamestudios.com).
 
 I live in Hamburg, Germany.
 
