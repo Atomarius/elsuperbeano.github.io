@@ -18,7 +18,6 @@ It's quite obvious that the problem originates from choosing the wrong tool or u
 ## Service Container as Service Locator
 Lately I came across Slim 4 because I wanted a no-nonsense lightweight framework. Since the interface is nice and easy 
 to understand, I took a look into the implementation. The first thing making me shiver was the constructor of the App class.
-Let's be clear here, It's about what the current state of the implementation looks like to me, not about blaming anyone.
 
 ```php
 class App extends RouteCollectorProxy implements RequestHandlerInterface {
@@ -154,17 +153,7 @@ What I see now, is some stuff preventing me from removing the container:
 - ...
 
 A lot of classes are poorly encapsulated. Often the encapsulation is broken, even by reflection for testing purposes. 
-Most of the time the state of an object is tested but not really the behaviour. Which leads the to the following problem.
-
-## The problem of writing code
-We are exposed to poorly written code everyday.  
-We believe code is hard to write because we see code that is hard to understand.  
-We are obsessed with technology that magically solves the *problem of writing code*.  
-We are failing, because we are left behind with nearly no skills except for reading the documentation of the next promising magical solution.  
-
-**If you go to an expensive restaurant with a famous chef, would you be okay being served convenience food?**  
-
-While thinking about this, let's take a look at the result of some serious refactoring.
+Most of the time the state of an object is tested but not really the behaviour. While thinking about this, let's take a look at the result of some serious refactoring.
 
 ## A few iterations of refactoring later...
 
